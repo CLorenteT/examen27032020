@@ -21,6 +21,13 @@ public class Carles extends HttpServlet {
 		res.setContentType("text/html");
 		PrintWriter pw=res.getWriter();
  
+		int cont = 1;
+		int resultat = 0;
+		while (cont < 10) {
+			resultat = cont + 2;
+		}
+		System.out.println(resultat);
+		
 		pw.println("<html><body>");
 		pw.println("Carles Lorente Tur");
 		pw.println("</body></html>");
